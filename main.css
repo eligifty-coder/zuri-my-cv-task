@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+.cv_container{
+   width: 90%;
+   max-width: 996px;
+   margin: 0 auto;
+   padding: 30px 0;
+   font-family: 'Roboto',
+   sans-serif;
+   
+}
+.name{
+   display: grid;
+   display: none;
+}
+.header{
+   width: 100%;
+}
+.header .title{
+   text-align: center;
+   font-size: 2.5rem;
+}
+a{
+   text-decoration: none;
+   color: #000;
+}
+li{
+   list-style: none;
+}
+.details{
+   width: 100%;
+   display: grid;
+}
+.links{
+   display: none;
+}
+.mobile{
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+}
+.mobile a{
+   padding: 0 3px;
+}
+@media screen and (min-width:768px){ 
+   .details{
+      display: grid;
+      grid-template-columns: 1fr ;
+      row-gap: 5px;
+   }
+   .details .line{
+      height: 10px;
+      width: 100%;
+      background: #000;
+   }
+   .links{
+      display: grid;
+      row-gap: 4px;
+      justify-self: end;
+      text-align: right;
+   }
+   .header .title {
+      display: none;
+   }
+   .name {
+      display: grid !important;
+      grid-template-columns: 1fr;
+      font-size: 1.5rem;
+   }
+   .mobile{
+      display: none;
+   }
+   .header{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+   }
+}
+/* summary */
+.summary{
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px 0;
+   padding-top: 40px;
+}
+.summary h1{
+   font-size: 2.5rem;
+   text-align: center;
+}
+.summary p{
+   font-size: 1.2rem;
+   text-align: justify;
+   line-height: 2rem;
+}
+@media screen and (min-width:768px){
+   .summary{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: flex-start;
+   }
+   .summary h1{
+      font-size: 1rem;
+      justify-self: start;
+   }
+   .para{
+      display: grid;
+      justify-items: end;
+   }
+   .summary p{
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 18px;
+      text-align: left;
+      width: 90%;
+   }
+}
+/* education */
+.education {
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px 0;
+   padding-top: 40px;
+}
+.education h1 {
+   font-size: 2.5rem;
+   text-align: center;
+}
+
+.content{
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   row-gap: 10px;
+}
+.school{
+   display: grid;
+   justify-self: center;
+   grid-template-columns: 1fr;
+   row-gap: 5px;
+   font-size: 1.2rem;
+}
+.date{
+   justify-self: end;
+}
+@media screen and (min-width:768px){
+   .content {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+   }
+   .education{
+      padding: 0;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 80px;
+   }
+   .education h1 {
+      font-size: 1rem;
+      justify-self: start;
+   }
+   .school{
+      width: 100%;
+      margin: 0 auto;
+   }
+   .content{
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 18px;
+   }
+}
+.skill h1 {
+   font-size: 2.5rem;
+   text-align: center;
+}
+
+.skill a{
+   font-size: 1.2rem;
+   padding: 0 2px;
+}
+a:hover{
+   text-decoration: underline;
+}
+.skill-mobile{
+   padding-top: 6px;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+@media screen and (min-width:768px){
+   .skill a{
+      padding: 0 5px;
+   }
+   .skill {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: flex-start;
+      column-gap: 7.2rem;
+      padding-top: 18px;
+   }
+   .skill h1 {
+      font-size: 1rem;
+      justify-self: start;
+   }
+   .skill-mobile{
+      justify-content: start;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #ccc;
+      /* width: 90%; */
+   }
+}
+.experience{
+   padding-top:28px;
+}
+.experience h1{
+   font-size: 2.5rem;
+   text-align: center;
+}
+.article {
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   row-gap: 10px;
+}
+.article p{
+   font-size: 18px;
+   padding: 7px 0;
+}
+.exp-content{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 18px;
+}
+.art-content span {
+   color: rgb(95, 82, 82);
+}
+.art-content{
+   justify-self: center;
+   text-align: center;
+}
+@media screen and (min-width:768px){
+   .article{
+      grid-template-columns: 1fr auto;
+   }
+   .art-content{
+      justify-self: start;
+      text-align: left;
+   }
+   .experience {
+      padding-top: 18px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 65px;
+   }
+   .experience h1 {
+      font-size: 1rem;
+      justify-self: start;
+   }
+}

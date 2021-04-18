@@ -17,7 +17,6 @@ body{
    box-shadow: 5px 5px 10px #cbced1,
    -5px -5px 10px #cbced1;
    border-radius: 20px;
-   background: #fefefe;
 }
 .name{
    display: grid;
